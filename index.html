@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel</title>
+
+        <!-- links css -->
+        <link rel="stylesheet" href="/asset/css/style.css">
+
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous">
+
+        <!-- font awsome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Allura&family=Mukta:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg"
+            style="position: fixed; top: 0; left: 0; z-index: 999; width: 100%;">
+            <div class="container container-fluid">
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt>
+                </a>
+                <div class="collapse navbar-collapse"
+                    id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="#carouselExampleInterval">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ideaSection">Ideas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#packageSection">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cardSlider">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center" id="iconDIv">
+                        <!-- Icon -->
+                        <a class="link-secondary me-3" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <!-- Notifications -->
+                        <div class="dropdown">
+                            <a
+                                class="link-secondary me-3 dropdown-toggle hidden-arrow"
+                                href="#"
+                                id="navbarDropdownMenuLink"
+                                role="button"
+                                data-mdb-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fas fa-bell"></i>
+                                <span
+                                    class="badge rounded-pill badge-notification bg-danger">1</span>
+                            </a>
+                            <ul
+                                class="dropdown-menu dropdown-menu-end"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item" href="#">Some news</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another
+                                        news</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something
+                                        else
+                                        here</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Avatar -->
+                        <div class="dropdown">
+                            <a
+                                class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                                href="#"
+                                id="navbarDropdownMenuAvatar"
+                                role="button"
+                                data-mdb-toggle="dropdown"
+                                aria-expanded="false">
+                                <img
+                                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                    class="rounded-circle"
+                                    height="25"
+                                    alt="Black and White Portrait of a Man"
+                                    loading="lazy" />
+                            </a>
+                            <ul
+                                class="dropdown-menu dropdown-menu-end"
+                                aria-labelledby="navbarDropdownMenuAvatar">
+                                <li>
+                                    <a class="dropdown-item" href="#">My profile</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- home page -->
+        <section id="carouselExampleInterval" class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./images/home-bg-1.jpg" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-div">
+                        <h1>Plan Your Dream Vacation<span
+                                class="d-block display-1 fw-bold">Start Here</span></h1>
+                        <p class="mt-2">Connect with fellow travelers and share
+                            your adventures through our vibrant travel
+                            community.</p>
+                        <a href="#"
+                            class="actionBtn">Book now</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/home-bg-2.jpg" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-div1">
+                        <h1>Explore the World<span
+                                class="d-block display-1 fw-bold"> with Us</span></h1>
+                        <p class="mt-2">Find the best deals on flights, hotels,
+                            and vacation packages all in one place.</p>
+                        <a href="#"
+                            class="actionBtn">Book now</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/home-bg-3.jpg" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-div">
+                        <h1>Explore Your Dream<span
+                                class="d-block display-1 fw-bold"> Destinations</span></h1>
+                        <p class="mt-2">Experience the thrill of travel with our
+                            expertly crafted itineraries</p>
+                        <a href="#"
+                            class="actionBtn">Book now</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- idea Section -->
+        <section id="ideaSection" class="container pb-5 pt-5">
+            <div class="titleDiv">
+                <p class="label">We care about your happiness</p>
+                <h2 class="title">OUR ADVENTURE IDEA!</h2>
+            </div>
+            <div class="cardDiv">
+                <div class="card" style="width: 15rem;">
+                    <img src="./images/category-1.jpg" class="card-img-top"
+                        alt="No Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Bungee Jump</h5>
+                        <p class="card-text">Experience
+                            the Ultimate Bungee Jump Adventure!</p>
+                        <a href="#"
+                            class="actionBtn">Read more</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./images/category-2.jpg" class="card-img-top"
+                        alt="No Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Zip Lines</h5>
+                        <p class="card-text">Soar Through the Skies with
+                            Unparalleled Thrills.</p>
+                        <a href="#"
+                            class="actionBtn">Read more</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./images/category-3.jpg" class="card-img-top"
+                        alt="No Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Canoeing</h5>
+                        <p class="card-text">Creating unforgettable memories on
+                            rivers and lakes.</p>
+                        <a href="#"
+                            class="actionBtn">Read more</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./images/category-4.jpg" class="card-img-top"
+                        alt="No Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Kayaking</h5>
+                        <p class="card-text">Embark on an unforgettable aquatic
+                            adventure with our premier kayaking service.</p>
+                        <a href="#"
+                            class="actionBtn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- package Section -->
+        <section id="packageSection">
+            <div class="titleDiv">
+                <p class="label">Get incredible pleasure with us</p>
+                <h2 class="title">OUR SPECIAL TOURS</h2>
+            </div>
+            <div class="row mt-5" id="gridDiv">
+                <div class="col-6" id="grid">
+                    <img class="w-100 rounded-3"
+                        src="./images/img-1.jpg"
+                        style="height: 500px; object-fit: cover;"
+                        alt>
+                </div>
+                <div class="col-6" id="gridDiv">
+                    <div class="row" id="grid">
+                        <div class="col-6">
+                            <img class="w-100 rounded-3"
+                                style="height: 250px; object-fit: cover;"
+                                src="./images/img-2.jpg"
+                                alt>
+                        </div>
+                        <div class="col-6" id="grid">
+                            <img class=" w-100 rounded-3"
+                                style="height: 250px; object-fit: cover;"
+                                src="./images/img-3.jpg"
+                                alt>
+                        </div>
+                    </div>
+                    <div id="grid">
+                        <img class="w-100 rounded-3 mt-4"
+                            src="./images/img-6.jpg"
+                            style="height: 225px; object-fit: cover;"
+                            alt>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- card slider -->
+        <section id="cardSlider">
+            <div class="titleDiv">
+                <p class="label">Travel far enough, meet yourself</p>
+                <h2 class="title">MOST POPULAR TOURS</h2>
+            </div>
+            <div id="carouselExampleControls"
+                class="carousel carousel-dark slide"
+                data-bs-ride="carousel">
+                <div class="carousel-inner mt-5">
+                    <div class="carousel-item active">
+                        <div
+                            class="card-wrapper container-sm d-flex  justify-content-around">
+                            <div class="card  " style="width: 19rem;">
+                                <img
+                                    src="./images/card-img-1.jpeg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Travel to the
+                                        Colosseum</h5>
+                                    <div class="starDiv">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <span>(5.0 Rating)</span>
+                                    </div>
+                                    <div class="iconCount">
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>10 Days</p>
+                                        </div>
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>Budget</p>
+                                        </div>
+                                    </div>
+                                    <p class="price">$500.00 USD <span>/Person</span></p>
+                                    <a href="#"
+                                        class="actionBtn">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="card  " style="width: 19rem;">
+                                <img
+                                    src="./images/card-img-2.jpeg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hobbit Houses</h5>
+                                    <div class="starDiv">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <span>(5.0 Rating)</span>
+                                    </div>
+                                    <div class="iconCount">
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>6 Days</p>
+                                        </div>
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>Romantic</p>
+                                        </div>
+                                    </div>
+                                    <p class="price">$500.00 USD <span>/Person</span></p>
+                                    <a href="#"
+                                        class="actionBtn">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="card  " style="width: 19rem;">
+                                <img
+                                    src="./images/card-img-3.jpeg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Underwater World</h5>
+                                    <div class="starDiv">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <span>(5.0 Rating)</span>
+                                    </div>
+                                    <div class="iconCount">
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>6 Days</p>
+                                        </div>
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>Family</p>
+                                        </div>
+                                    </div>
+                                    <p class="price">$500.00 USD <span>/Person</span></p>
+                                    <a href="#"
+                                        class="actionBtn">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="card  " style="width: 19rem;">
+                                <img
+                                    src="./images/card-img-4.jpeg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rafting the Waterfall</h5>
+                                    <div class="starDiv">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <span>(5.0 Rating)</span>
+                                    </div>
+                                    <div class="iconCount">
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>9 Days</p>
+                                        </div>
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>Adventure</p>
+                                        </div>
+                                    </div>
+                                    <p class="price">$500.00 USD <span>/Person</span></p>
+                                    <a href="#"
+                                        class="actionBtn">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div
+                            class="card-wrapper container-sm d-flex   justify-content-around">
+                            <div class="card  " style="width: 19rem;">
+                                <img
+                                    src="./images/card-img-5.jpeg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Adventures in Japan</h5>
+                                    <div class="starDiv">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <span>(5.0 Rating)</span>
+                                    </div>
+                                    <div class="iconCount">
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>8 Days</p>
+                                        </div>
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>Adventure</p>
+                                        </div>
+                                    </div>
+                                    <p class="price">$500.00 USD <span>/Person</span></p>
+                                    <a href="#"
+                                        class="actionBtn">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="card  " style="width: 19rem;">
+                                <img
+                                    src="./images/card-img-6.jpeg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Island life</h5>
+                                    <div class="starDiv">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <span>(5.0 Rating)</span>
+                                    </div>
+                                    <div class="iconCount">
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>12 Days</p>
+                                        </div>
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>Exotic</p>
+                                        </div>
+                                    </div>
+                                    <p class="price">$500.00 USD <span>/Person</span></p>
+                                    <a href="#"
+                                        class="actionBtn">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="card  " style="width: 19rem;">
+                                <img
+                                    src="./images/card-img-7.jpeg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">River Rafting</h5>
+                                    <div class="starDiv">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <span>(5.0 Rating)</span>
+                                    </div>
+                                    <div class="iconCount">
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>8 Days</p>
+                                        </div>
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>Adventure</p>
+                                        </div>
+                                    </div>
+                                    <p class="price">$500.00 USD <span>/Person</span></p>
+                                    <a href="#"
+                                        class="actionBtn">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="card  " style="width: 19rem;">
+                                <img
+                                    src="./images/card-img-8.jpeg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vilnius, Lithuania</h5>
+                                    <div class="starDiv">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <span>(5.0 Rating)</span>
+                                    </div>
+                                    <div class="iconCount">
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>6 Days</p>
+                                        </div>
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>Family</p>
+                                        </div>
+                                    </div>
+                                    <p class="price">$500.00 USD <span>/Person</span></p>
+                                    <a href="#"
+                                        class="actionBtn">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div
+                            class="card-wrapper container-sm d-flex  justify-content-around">
+                            <div class="card  " style="width: 19rem;">
+                                <img
+                                    src="./images/card-img-1.jpeg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Travel to the
+                                        Colosseum</h5>
+                                    <div class="starDiv">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <span>(5.0 Rating)</span>
+                                    </div>
+                                    <div class="iconCount">
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>10 Days</p>
+                                        </div>
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>Budget</p>
+                                        </div>
+                                    </div>
+                                    <p class="price">$500.00 USD <span>/Person</span></p>
+                                    <a href="#"
+                                        class="actionBtn">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="card  " style="width: 19rem;">
+                                <img
+                                    src="./images/card-img-2.jpeg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hobbit Houses</h5>
+                                    <div class="starDiv">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <span>(5.0 Rating)</span>
+                                    </div>
+                                    <div class="iconCount">
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>6 Days</p>
+                                        </div>
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>Romantic</p>
+                                        </div>
+                                    </div>
+                                    <p class="price">$500.00 USD <span>/Person</span></p>
+                                    <a href="#"
+                                        class="actionBtn">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="card  " style="width: 19rem;">
+                                <img
+                                    src="./images/card-img-3.jpeg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Underwater World</h5>
+                                    <div class="starDiv">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <span>(5.0 Rating)</span>
+                                    </div>
+                                    <div class="iconCount">
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>6 Days</p>
+                                        </div>
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>Family</p>
+                                        </div>
+                                    </div>
+                                    <p class="price">$500.00 USD <span>/Person</span></p>
+                                    <a href="#"
+                                        class="actionBtn">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="card  " style="width: 19rem;">
+                                <img
+                                    src="./images/card-img-4.jpeg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rafting the Waterfall</h5>
+                                    <div class="starDiv">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <img src="./images/icons/star.png" alt
+                                            class="star">
+                                        <span>(5.0 Rating)</span>
+                                    </div>
+                                    <div class="iconCount">
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>9 Days</p>
+                                        </div>
+                                        <div class="icon">
+                                            <img
+                                                src="./images/icons/info.png"
+                                                alt class="image">
+                                            <p>Adventure</p>
+                                        </div>
+                                    </div>
+                                    <p class="price">$500.00 USD <span>/Person</span></p>
+                                    <a href="#"
+                                        class="actionBtn">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="bannerSection" class="container pt-5">
+            <div class="contentDIv">
+                <p class="label">Book now and get a discount</p>
+                <h3 class="title">LET'S TRAVEL ALL YEAR ROUND</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Architecto est ex quasi earum obcaecati
+                    quaerat nam molestiae tempore! Excepturi sunt aliquam
+                    debitis fuga ut voluptatum esse nihil deserunt ipsam
+                    officia.</p>
+            </div>
+            <div class="imageDiv">
+                <img src="./images/mockup.png" alt>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-white text-muted"
+            id="footer">
+            <!-- Section: Social media -->
+            <section
+                class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href class="me-4 link-secondary">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href class="me-4 link-secondary">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href class="me-4 link-secondary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class>
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <img src="./images/logo.png" alt
+                                style="width: 150px; margin-bottom: 1rem;">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Deleniti dicta rem unde atque
+                                accusamus ducimus quidem sit, quas et corrupti
+                                non consequuntur minus, soluta totam deserunt
+                                hic ipsam modi quo.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="#carouselExampleInterval"
+                                    class="text-reset">Home</a>
+                            </p>
+                            <p>
+                                <a href="#ideaSection" class="text-reset">Idea</a>
+                            </p>
+                            <p>
+                                <a href="#packageSection" class="text-reset">Gallery</a>
+                            </p>
+                            <p>
+                                <a href="#cardSlider" class="text-reset">Packages</a>
+                            </p>
+                            <p>
+                                <a href="#footer" class="text-reset">Contact</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Pricing</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Booking</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div
+                            class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3 text-secondary"></i>
+                                New York, NY 10012, US</p>
+                            <p>
+                                <i class="fas fa-envelope me-3 text-secondary"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3 text-secondary"></i>
+                                + 01 234 567 88</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4"
+                style="background-color: rgba(0, 0, 0, 0.025);">
+                © 2022 Copyright:
+                <a class="text-reset fw-bold" href>airTran</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </body>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</html>

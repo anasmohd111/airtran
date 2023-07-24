@@ -1,0 +1,383 @@
+body {
+    background-image: url("/images/bg-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Mukta", sans-serif
+}
+
+.navbar {
+    background-color: #fff
+}
+
+.navbar a {
+    text-decoration: none
+}
+
+.navbar .navbar-brand img {
+    width: 110px
+}
+
+.navbar #navbarTogglerDemo03 ul {
+    margin: auto
+}
+
+.carousel-div {
+    max-width: 550px;
+    position: absolute;
+    top: 35%;
+    right: 15%
+}
+
+.carousel-div h1 {
+    font-family: "Allura", cursive;
+    color: #fa6741
+}
+
+.carousel-div h1 span {
+    font-family: "Mukta", sans-serif;
+    color: #000;
+    margin-top: -10px;
+    font-size: 60px
+}
+
+.carousel-div p {
+    font-size: 1.2rem
+}
+
+.carousel-div .actionBtn {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .75rem 1.5rem
+}
+
+.carousel-div .actionBtn:hover {
+    background-color: #fa6741;
+    background: linear-gradient(65deg, #ff7611, #fd311b);
+    color: #fff
+}
+
+.carousel-div1 {
+    max-width: 550px;
+    position: absolute;
+    top: 35%;
+    left: 15%
+}
+
+.carousel-div1 h1 {
+    font-family: "Allura", cursive;
+    color: #fa6741
+}
+
+.carousel-div1 h1 span {
+    font-family: "Mukta", sans-serif;
+    color: #000;
+    margin-top: -10px;
+    font-size: 60px
+}
+
+.carousel-div1 p {
+    font-size: 1.2rem
+}
+
+.carousel-div1 .actionBtn {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .75rem 1.5rem
+}
+
+.carousel-div1 .actionBtn:hover {
+    background-color: #fa6741;
+    background: linear-gradient(65deg, #ff7611, #fd311b);
+    color: #fff
+}
+
+#ideaSection {
+    background-color: #fff;
+    max-width: 100%
+}
+
+#ideaSection .titleDiv {
+    text-align: center
+}
+
+#ideaSection .titleDiv .label {
+    font-family: "Allura", cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fa6741
+}
+
+#ideaSection .titleDiv .title {
+    font-size: 40px;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: -20px
+}
+
+#ideaSection .cardDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem
+}
+
+#ideaSection .cardDiv .card {
+    border: unset;
+    margin-right: 5rem
+}
+
+#ideaSection .cardDiv .card img {
+    border: 7px solid #fa6741
+}
+
+#ideaSection .cardDiv .card:nth-last-child(1) {
+    margin-right: 0
+}
+
+#ideaSection .cardDiv .card .card-img-top {
+    border-radius: 50%
+}
+
+#ideaSection .cardDiv .card .card-body {
+    text-align: center
+}
+
+#ideaSection .cardDiv .card .card-body .card-title {
+    color: #fa6741
+}
+
+#ideaSection .cardDiv .card .card-body .actionBtn {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    border: 1px solid #d3d3d3
+}
+
+#ideaSection .cardDiv .card .card-body .actionBtn:hover {
+    background-color: #fa6741;
+    background: linear-gradient(65deg, #ff7611, #fd311b);
+    color: #fff
+}
+
+#packageSection {
+    background-color: #fff;
+    max-width: 100%;
+    padding: 2rem 8rem
+}
+
+#packageSection .titleDiv {
+    text-align: center
+}
+
+#packageSection .titleDiv .label {
+    font-family: "Allura", cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fa6741
+}
+
+#packageSection .titleDiv .title {
+    font-size: 40px;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: -20px
+}
+
+#packageSection #gridDiv #grid img {
+    z-index: 1
+}
+
+#packageSection #gridDiv #grid img:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, .055) 0px 20px 25px -5px, rgba(0, 0, 0, .04) 0px 10px 10px -5px
+}
+
+#cardSlider {
+    background-color: #fff;
+    max-width: 100%;
+    padding: 3rem 0 6rem 0;
+    background-image: url("/images/card-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+#cardSlider .titleDiv {
+    text-align: center
+}
+
+#cardSlider .titleDiv .label {
+    font-family: "Allura", cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fa6741
+}
+
+#cardSlider .titleDiv .title {
+    font-size: 40px;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: -20px
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card {
+    overflow: hidden;
+    border: unset;
+    border-radius: 15px
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card:hover {
+    transform: translateY(-5px)
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    transition: all .4s ease-in-out
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-img-top:hover {
+    transform: scale(1.1, 1.1)
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-body {
+    text-align: center
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-body .card-title {
+    color: #fa6741
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-body .starDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-body .starDiv .star {
+    width: 15px;
+    margin-right: .5rem
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-body .starDiv span {
+    color: gray
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-body .iconCount {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-body .iconCount .icon {
+    display: flex;
+    align-items: center
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-body .iconCount .icon .image {
+    width: 15px;
+    margin-bottom: 1.3rem;
+    margin-right: .3rem
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-body .iconCount .icon p {
+    font-size: .8rem;
+    color: gray;
+    margin-top: -5px;
+    font-weight: 600
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-body .price {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fa6741
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-body .price span {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-body .actionBtn {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .75rem 1.5rem;
+    border: 1px solid #d3d3d3
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-item .card-wrapper .card .card-body .actionBtn:hover {
+    background-color: #fa6741;
+    background: linear-gradient(65deg, #ff7611, #fd311b);
+    color: #fff
+}
+
+#cardSlider #carouselExampleControls .carousel-inner .carousel-control-prev,
+#cardSlider #carouselExampleControls .carousel-inner .carousel-control-next {
+    width: 10%
+}
+
+#bannerSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+#bannerSection .contentDIv {
+    color: #fff;
+    width: 50%
+}
+
+#bannerSection .contentDIv .label {
+    font-family: "Allura", cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fa6741
+}
+
+#bannerSection .contentDIv .title {
+    font-size: 40px;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: -20px
+}
+
+#bannerSection .imageDiv {
+    width: 40%
+}
+
+footer a {
+    text-decoration: none
+}
+
+/*# sourceMappingURL=style.css.map */
